@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafbfc;
+}
+header{
+    background-color: rgb(139, 63, 211);
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+  
+}
+main{
+    padding: 30px 50px;
+}
+.card{
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.lineInput{
+    display: grid;
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: rgb(139, 63, 211) ;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+button:hover{
+    background-color: rgb(110, 3, 211) ;
+}
+.content{
+    margin-top: 15px;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+    
+}
+table th{
+    background-color: rgb(214, 214, 214);
+}
+table th, td{
+    text-align: left;
+    padding: 1px 5px;
+}
+table td img{
+    width: 23px;
+    margin-right:5px;
+}
+.center{
+    text-align: center;
+    
+}
