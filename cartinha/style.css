@@ -262,14 +262,19 @@
     font-size: 18px
     
   }
-  @media screen and (max-width: 300px) {
-    /* estilos */
+  @media screen and (max-width: 950px) {
+    .envlope-wrapper{
+        width: 80%;
+        height: 50%;
+        margin-bottom: 180px;
+        margin-left: 5%;
+   }
    }
    @media screen and (max-width: 640px) {
    .envlope-wrapper{
-        width: auto;
-        height: auto;
-        margin-bottom: 200px;
-        margin-left: 5%;
+        width: 80%;
+        height: 50%;
+        margin-bottom: 180px;
+        margin-left: 6%;
    }
    }
