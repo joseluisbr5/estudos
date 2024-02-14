@@ -262,6 +262,14 @@
     font-size: 18px
     
   }
-  @media screen and
-(min-width: 200px) and
-(max-width: 640px)
+  @media screen and (max-width: 300px) {
+    /* estilos */
+   }
+   @media screen and (max-width: 640px) {
+   .envlope-wrapper{
+        width: 80%;
+        height: auto;
+        margin-bottom: 200px;
+        margin-left: 6%;
+   }
+   }
