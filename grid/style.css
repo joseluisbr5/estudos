@@ -1,0 +1,145 @@
+header{
+
+    font-size: 50px;
+    font-style:italic;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    width: 2000px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: rgb(0, 0, 0);
+}
+
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: rgb(0, 0, 0);
+}
+#carousel img{
+margin-left: 290px;
+max-width: 700px;
+max-height: 900px;
+align-items: center;
+}
+
+#carouselExempleControls{
+border-bottom: 2px solid #000;
+}
+article img{
+margin-right: 22px;
+height: 250px;
+width: 240px;
+}
+#cards{
+margin-left: 5px;
+margin-bottom: 20px;
+}
+#cards img{
+max-height: 205px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1323px) {
+    body{
+        overflow:scroll;
+
+    }
+    #carousel{
+        margin-bottom: 20px;
+    }
+    header{
+        width: 1000px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #cards{
+        display: flex;
+        margin-left: 90px;
+    }
+    .container h1{
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    .card{
+        margin-bottom: 10px;
+        
+    }
+    #cards img{
+        max-width: 200px;
+        margin-left: 40px;
+        
+    }
+    #carousel img {
+        height: 300px;
+        max-width: 400px;
+        margin-left:250px;
+    }
+    #carouselExempleControls{
+        margin-bottom:70px ;
+    }
+
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    body{
+        overflow:scroll;
+    }
+    #carousel{
+        margin-bottom: 20px;
+    }
+    header{
+        width: 800px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #cards{
+        display: flexbox;
+        margin-left: 75px;
+    }
+    .card{
+        margin-bottom: 10px;
+    }
+    #cards img{
+        max-width: 200px;
+        
+    }
+    #carousel img {
+        height: 300px;
+        max-width: 400px;
+        margin-left:160px;
+    }
+
+}
+@media screen and (max-width:640px){
+    header{
+        width: 430px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #carousel{
+        margin-bottom: 50px;
+    }
+    #cards{
+        display: flex;
+        margin-left: 45px;
+        margin-bottom: 10px;
+
+    }
+
+    #carousel img {
+        height: 200px;
+        max-width: 300px;
+        margin-left:60px;
+    }
+    .card{
+        margin-bottom: 10px;
+    }
+    #carouselExempleControls{
+        margin-bottom:30px ;
+        margin-left: 5px;
+    }
+}
