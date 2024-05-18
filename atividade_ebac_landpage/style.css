@@ -1,0 +1,81 @@
+.navbar {
+    background-color: #3f50ec;
+}
+#title, .nav-link {
+    font-family: "Permanent Marker", cursive;
+    color: rgb(254, 255, 255);
+    font-weight: 700;
+    font-size: 25px;
+}
+#cabecalho .nav .nav-link.active {
+    background-color: aliceblue;
+    color: #3f50ec;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(20, 0, 0);
+}
+.card {
+    height: 500px;
+}
+#carros-loja img {
+    height: 300px;
+}
+.fonte {
+    font-family: "Permanent Marker", cursive;
+    color: #3f50ec;
+    font-size: 30px;
+}
+.fonte-sozinha {
+    font-family: "Permanent Marker", cursive;
+}
+#carros-loja {
+    background-color: #cce4ff;
+    color: aliceblue;
+}
+.cor {
+    color: #3f50ec;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+}
+#cabecalho .nav .nav-link, .navbar-brand,
+.navbar-brand:hover .nav-cardapio .nav-link.active:hover {
+    color: aliceblue;
+}
+.navbar-toggler {
+    background-color: rgb(255, 255, 255);
+}
+#carros-loja button, #fale-conosco button {
+    background-color: #3f50ec;
+    color: #ffffff;
+}
+#cabecalho .nav .nav-link.active {
+    background-color: aliceblue;
+    color: #3f50ec;
+}
+.nav-link.active:hover {
+    color: #fffbfb;
+}
+
+/* New CSS for :target */
+section:target::before {
+    content: '';
+    display: block;
+    height: 70px; /* height of your fixed header */
+    margin-top: -70px; /* height of your fixed header (negative value) */
+}
+.nav-link {
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+}
+.nav-link:target {
+    color: #ffffff;
+    background-color: #3f50ec;
+}
+/* Specific for each section to change nav-link */
+#veiculos:target ~ header .nav-link[href="#veiculos"],
+#fale-conosco:target ~ header .nav-link[href="#fale-conosco"] {
+    color: #ffffff;
+    background-color: #3f50ec;
+}
