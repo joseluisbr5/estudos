@@ -1,0 +1,124 @@
+// styles.scss
+
+// Variáveis
+$font-stack: 'Roboto', sans-serif;
+$color-background: #f5f6fa;
+$color-header: #182C61;
+$color-button: #44bd32;
+$color-button-hover: #4cd137;
+$color-white: #fff;
+$max-width-container: 1024px;
+$padding-header: 16px;
+$padding-section: 56px;
+$margin-product-top: 40px;
+$border-radius-product: 16px;
+$border-radius-button: 8px;
+
+// Estilos base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $color-background;
+}
+
+li {
+    list-style: none;
+}
+
+// Layout
+.container {
+    max-width: $max-width-container;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $color-header;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $padding-header 0;
+    }
+}
+
+section {
+    padding: $padding-section 0;
+}
+
+// Componentes
+.menu {
+    display: flex;
+    
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+        
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}
+
+.products {
+    margin-top: $margin-product-top;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: $border-radius-product;
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: $color-button;
+    color: $color-white;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: $border-radius-button;
+    margin-top: 8px;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: $color-button-hover;
+    }
+}
+
+// Estilos responsivos
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
