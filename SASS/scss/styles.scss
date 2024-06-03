@@ -1,6 +1,4 @@
-// styles.scss
 
-// Variáveis
 $font-stack: 'Roboto', sans-serif;
 $color-background: #f5f6fa;
 $color-header: #182C61;
@@ -14,7 +12,6 @@ $margin-product-top: 40px;
 $border-radius-product: 16px;
 $border-radius-button: 8px;
 
-// Estilos base
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +27,6 @@ li {
     list-style: none;
 }
 
-// Layout
 .container {
     max-width: $max-width-container;
     width: 100%;
@@ -101,7 +97,6 @@ section {
     }
 }
 
-// Estilos responsivos
 @media screen and (max-width: 1023px) {
     .container {
         max-width: 80%;
